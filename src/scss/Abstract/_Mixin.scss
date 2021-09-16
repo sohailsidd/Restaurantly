@@ -4,3 +4,41 @@
     justify-content: $ji;
     flex-direction: $fd;
 }
+
+@mixin background-image($at: fixed, $x: center, $y: center) {
+    background-repeat: no-repeat;
+    background-position: $x $y;
+    background-attachment: $at;
+    background-size: cover;
+}
+
+@mixin before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@mixin button($bc: transparent, $bh: $Brown) {
+    @include rfs(0.214rem, border-width);
+    border-style: solid;
+    border-color: $Brown;
+    font-weight: 600;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    @include font-size(1rem);
+    color: $White;
+    @include rfs(3.571rem, border-radius);
+    line-height: 1;
+    font-family: "Open Sans", sans-serif;
+    background-color: $bc;
+    transition: background-color 0.3s;
+    @include rfs(0.7rem 1.7rem 0.7rem 1.7rem, padding);
+
+    &:hover {
+        background-color: $bh;
+    }
+}

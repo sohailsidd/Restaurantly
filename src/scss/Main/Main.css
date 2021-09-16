@@ -8,6 +8,33 @@
   font-family: "Open Sans", sans-serif;
 }
 
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Playfair Display", serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -123,41 +150,57 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+
+h2,
+.h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
 
 @media (min-width: 1200px) {
-  h2, .h2 {
+  
+  h2,
+  .h2 {
     font-size: 2rem;
   }
 }
 
-h3, .h3 {
+
+h3,
+.h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 
 @media (min-width: 1200px) {
-  h3, .h3 {
+  
+  h3,
+  .h3 {
     font-size: 1.75rem;
   }
 }
 
-h4, .h4 {
+
+h4,
+.h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
 
 @media (min-width: 1200px) {
-  h4, .h4 {
+  
+  h4,
+  .h4 {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5 {
+
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+
+h6,
+.h6 {
   font-size: 1rem;
 }
 
@@ -18083,5 +18126,222 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../../images/Background/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .welcome {
+  position: relative;
+}
+
+.hero .welcome h1, .hero .welcome .h1 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(1.4679rem + 2.6148vw);
+  color: #ffffff;
+  margin-bottom: 0px !important;
+}
+
+@media (min-width: 1200px) {
+  .hero .welcome h1, .hero .welcome .h1 {
+    font-size: 3.429rem;
+  }
+}
+
+.hero .welcome h1 span, .hero .welcome .h1 span {
+  font-weight: 700;
+  font-family: inherit;
+  color: #cda45e;
+  font-size: calc(1.4679rem + 2.6148vw);
+}
+
+@media (min-width: 1200px) {
+  .hero .welcome h1 span, .hero .welcome .h1 span {
+    font-size: 3.429rem;
+  }
+}
+
+.hero .welcome h2, .hero .welcome .h2 {
+  position: relative;
+  color: #eee;
+  font-size: calc(1.2821rem + 0.3852vw);
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .hero .welcome h2, .hero .welcome .h2 {
+    font-size: 1.571rem;
+  }
+}
+
+.hero .welcome button {
+  border-width: 0.214rem;
+  border-style: solid;
+  border-color: #cda45e;
+  font-weight: 600;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ffffff;
+  border-radius: calc(1.4821rem + 2.7852vw);
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  padding: 0.7rem calc(1.295rem + 0.54vw) 0.7rem calc(1.295rem + 0.54vw);
+  margin: 1rem 0 0 0;
+}
+
+@media (min-width: 1200px) {
+  .hero .welcome button {
+    border-radius: 3.571rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .welcome button {
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+  }
+}
+
+.hero .welcome button:hover {
+  background-color: #cda45e;
+}
+
+.hero .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* pulse wave */
+}
+
+.hero .play .play-btn {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(rgba(205, 164, 94, 0.8) 60%, white 62%);
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  -webkit-box-shadow: 0px 0px 25px 3px rgba(205, 164, 94, 0.8);
+          box-shadow: 0px 0px 25px 3px rgba(205, 164, 94, 0.8);
+  /* triangle */
+}
+
+.hero .play .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hero .play .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.75);
+  top: -25%;
+  left: -25%;
+  background: rgba(198, 16, 0, 0);
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    -webkit-box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    -webkit-box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 /*# sourceMappingURL=Main.css.map */
