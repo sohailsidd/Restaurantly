@@ -12,14 +12,14 @@
     background-size: cover;
 }
 
-@mixin before {
+@mixin before($opacity: 0.5) {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, $opacity);
 }
 
 @mixin button($bc: transparent, $bh: $Brown) {
@@ -41,4 +41,8 @@
     &:hover {
         background-color: $bh;
     }
+}
+
+@mixin sectionPaddingY {
+    @include rfs(5rem 0px 5rem 0px, padding);
 }

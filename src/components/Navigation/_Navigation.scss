@@ -1,0 +1,116 @@
+.navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    .topbar {
+        @include flex(center, space-between);
+        color: $White;
+        line-height: 1;
+        font-weight: 600;
+        @include rfs(1rem 0px, padding);
+
+        .info {
+            i {
+                margin-right: 5px;
+                color: $Brown;
+            }
+
+            span:nth-of-type(1) {
+                margin-right: 20px;
+            }
+        }
+
+        .bredcrum {
+            span:nth-of-type(1) {
+                color: $Brown;
+
+                &::after {
+                    content: "/";
+                    color: $Gray;
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+
+    .bottombar {
+        background-color: rgba(0, 0, 0, 0.5);
+        @include rfs(1rem 0px, padding);
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        @include flex;
+
+        .container {
+            @include flex;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                color: $White;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: 1;
+                margin-bottom: 0px !important;
+            }
+
+            .nav-bar {
+                flex-grow: 1;
+
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style-type: none;
+                    @include flex(center, flex-end);
+
+                    li {
+                        color: $White;
+                        font-weight: 500;
+                        transition: 0.3s;
+                        @include rfs(2rem, margin-right);
+
+                        #dropdown-basic {
+                            padding: 0px;
+                            outline: none !important;
+                            border: none;
+                            font-weight: 400;
+                            text-transform: none;
+
+                            &:hover {
+                                color: $Brown;
+                                background-color: transparent;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+
+                        .dropdown-item {
+                            color: black !important;
+
+                            &:hover {
+                                color: $Brown;
+                            }
+                        }
+
+                        &:hover {
+                            color: $Brown;
+                        }
+                    }
+                }
+            }
+
+            i {
+                color: $White;
+            }
+
+            button {
+                @include button;
+            }
+        }
+    }
+}

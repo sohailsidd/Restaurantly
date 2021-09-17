@@ -6,7 +6,7 @@ function Hero() {
 
     useEffect(() => {
         Aos.init({
-            duration: 2000
+            duration: 1000
         });
     },[])
 
@@ -14,7 +14,7 @@ function Hero() {
         <>
             <div className="hero">
                 <div className="container-lg" data-aos="zoom-in">
-                    <div className="row">
+                    <div className="row pt-5  mt-5">
                         <div className="col-lg-10 gx-0 text-lg-start text-center welcome">
                             <h1 >Welcome to 
                                 <span> Restaurantly</span>
