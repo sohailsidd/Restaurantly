@@ -1,0 +1,49 @@
+.why {
+    background-color: $Bg-color1;
+    @include section();
+
+    .box {
+        background-color: $Bg-color2;
+        transition: all ease-in-out 1s;
+
+        &:hover h1 {
+            color: $White;
+        }
+
+        &:hover h2 {
+            color: $White;
+        }
+
+        &:hover p {
+            color: $White;
+        }
+
+        &:hover {
+            background-color: $Brown;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+        }
+
+        h1 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            color: $Brown;
+            padding-bottom: 0px;
+            transition: 1s;
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            @include rfs(1rem 0px, padding);
+            transition: 1s;
+        }
+
+        p {
+            color: $Dark-Gray;
+            font-weight: 500;
+            @include rfs(1.1rem, font-size);
+            font-family: "Open Sans", sans-serif;
+            transition: 1s;
+        }
+    }
+}

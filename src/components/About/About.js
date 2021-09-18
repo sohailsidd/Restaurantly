@@ -29,8 +29,8 @@ function About() {
                             <ul>
                                 {
                                     text.map((para) => {
-                                        return <li>
-                                            <i key={para} className="far fa-check-circle">
+                                        return <li key={para}>
+                                            <i className="far fa-check-circle">
                                                 <span>{ para }</span>
                                             </i>
                                         </li>

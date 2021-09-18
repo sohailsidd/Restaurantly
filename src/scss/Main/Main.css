@@ -18669,11 +18669,6 @@ readers do not read off random characters that represent icons */
   transition: 0.5s;
 }
 
-.about .about-img:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .about .about-img:hover::before {
   left: 10px;
   top: 10px;
@@ -18688,5 +18683,119 @@ readers do not read off random characters that represent icons */
   max-width: 100%;
   border: 4px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about-img img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.why {
+  background-color: #0c0b09;
+  padding: calc(1.625rem + 4.5vw) 0 calc(1.625rem + 4.5vw) 0;
+}
+
+@media (min-width: 1200px) {
+  .why {
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+.why .heading {
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0px !important;
+}
+
+.why .heading::after {
+  content: "";
+  display: inline-block;
+  width: calc(2.125rem + 10.5vw);
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 1px;
+  margin-left: 1rem;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 1200px) {
+  .why .heading::after {
+    width: 10rem;
+  }
+}
+
+.why .title {
+  font-size: calc(1.3821rem + 1.5852vw);
+  color: #cda45e;
+  font-weight: 700;
+  line-height: 1.5;
+  padding-bottom: calc(1.4107rem + 1.9284vw);
+}
+
+@media (min-width: 1200px) {
+  .why .title {
+    font-size: 2.571rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .why .title {
+    padding-bottom: 2.857rem;
+  }
+}
+
+.why .box {
+  background-color: #1a1814;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+.why .box:hover h1, .why .box:hover .h1 {
+  color: #ffffff;
+}
+
+.why .box:hover h2, .why .box:hover .h2 {
+  color: #ffffff;
+}
+
+.why .box:hover p {
+  color: #ffffff;
+}
+
+.why .box:hover {
+  background-color: #cda45e;
+  -webkit-box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.why .box h1, .why .box .h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #cda45e;
+  padding-bottom: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.why .box h2, .why .box .h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  padding: 1rem 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.why .box p {
+  color: #aaaaaa;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=Main.css.map */
