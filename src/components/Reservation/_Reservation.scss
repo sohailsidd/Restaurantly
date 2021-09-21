@@ -1,0 +1,61 @@
+.reservation {
+    background-color: $color4;
+    @include section;
+
+    .first-textbox {
+        input,
+        textarea {
+            background-color: transparent;
+            border: 1px solid #625b4b;
+            font-family: "Open Sans", sans-serif;
+            @include font-size(0.9rem);
+            line-height: 2.7;
+            padding-left: 10px;
+            font-weight: 500;
+            color: $color1;
+            border-radius: 0px;
+            margin: 0px 0px 25px 0px;
+            width: 100%;
+            transition: border-color 0.15s ease;
+
+            &:focus {
+                border-color: #cda45e !important;
+                border-radius: 0px;
+            }
+
+            &:hover {
+                border-color: #cda45e;
+            }
+
+            &::placeholder {
+                color: #a49b89;
+                font-weight: 600;
+            }
+        }
+
+        textarea {
+            @include rfs(10rem, height);
+        }
+
+        button {
+            position: relative;
+            color: $color1;
+            border: 2px solid $color2;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            @include font-size(1rem);
+            @include rfs(0.5rem, padding-top);
+            @include rfs(0.5rem, padding-bottom);
+            @include rfs(2rem, padding-left);
+            @include rfs(2rem, padding-right);
+            border-radius: 20px;
+            outline: none;
+            background-color: $color2;
+
+            &:hover {
+                background-color: $hover;
+                transition: background-color $duration;
+            }
+        }
+    }
+}

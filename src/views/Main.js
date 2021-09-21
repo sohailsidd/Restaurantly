@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import Navigation from "../components/Navigation/Navigation";
 import MainSection from "../components/MainSection/MainSection"; 
+import Footer from "../components/Footer/Footer";
 
 function Main() {
     return (
@@ -9,6 +10,7 @@ function Main() {
                 <Navigation />
                 <Hero />
                 <MainSection />
+                <Footer />
             </div>
         </>
     );

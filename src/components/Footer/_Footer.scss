@@ -1,0 +1,152 @@
+.footer {
+    background-color: $blackbackground;
+
+    .footer-content {
+        background-color: $lightblackbackground;
+        border-top: 1px solid #37332a;
+        border-bottom: 1px solid #28251f;
+        @include rfs(4rem, padding-top);
+        @include rfs(4rem, padding-bottom);
+        color: $White;
+
+        .d-1 {
+            line-height: 73%;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif;
+            @include font-size(1.5rem);
+        }
+
+        .dis-1 {
+            font-weight: 500;
+            font-family: "Playfair Display", serif;
+            @include rfs(0.85rem, font-size);
+            margin-bottom: 0px !important;
+        }
+
+        .footer-icon-container {
+            @include flex(flex-start);
+
+            .footer-icon {
+                width: 36px;
+                height: 36px;
+                @include flex;
+                color: $White;
+                border-radius: 50%;
+                margin-right: 8px;
+                background-color: #28251f;
+                @include rfs(0.85rem, font-size);
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: $Brown;
+                }
+            }
+        }
+
+        .link-container {
+            color: $White;
+
+            .nav-heading {
+                font-family: "Playfair Display", serif;
+                font-weight: 600;
+                @include rfs(1.2rem);
+                line-height: 70%;
+            }
+
+            .nav-icon {
+                @include rfs(0.7rem);
+                color: $Brown;
+            }
+
+            .linkitem {
+                @include font-size(0.9rem);
+                font-weight: 400;
+                font-family: "Open Sans", sans-serif;
+                color: $White;
+
+                &:hover {
+                    color: $Brown;
+                    transition: color 0.3s;
+                }
+            }
+        }
+
+        .news {
+            color: $White;
+
+            .heading {
+                font-family: "Playfair Display", serif;
+                font-weight: 600;
+                @include rfs(1.2rem);
+                line-height: 70%;
+            }
+
+            .subscribe {
+                display: flex;
+                justify-content: space-between;
+                background-color: #28251f;
+                color: $White;
+                font-weight: 400;
+                font-family: "Open Sans", sans-serif;
+                border-radius: 50px;
+                border: 1px solid #37332a;
+
+                input {
+                    border: none;
+                    outline: none;
+                    color: $White;
+                    background-color: transparent;
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    color: $White;
+                    @include rfs(0.5rem, padding-top);
+                    @include rfs(0.5rem, padding-bottom);
+                    @include rfs(1rem, padding-left);
+                    @include rfs(1rem, padding-right);
+                    background-color: $Brown;
+                    border-radius: 50px;
+
+                    &:hover {
+                        background-color: $hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @include flex(center, center, column);
+        color: $White;
+        @include rfs(2rem, padding-top);
+        @include rfs(2rem, padding-bottom);
+
+        .copy-dis1,
+        .copy-dis2 {
+            margin: 0 !important;
+        }
+
+        .copy-dis1 {
+            @include font-size(0.9rem);
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+
+            span {
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+
+        .copy-dis2 {
+            @include font-size(0.8rem);
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+
+            .color-brown {
+                color: $Brown;
+            }
+        }
+    }
+}

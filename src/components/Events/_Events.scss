@@ -1,0 +1,58 @@
+.events {
+    background-image: url(../../images/events-bg.jpg);
+    @include background-black;
+
+    .name {
+        @include name;
+        position: relative;
+    }
+
+    .heading {
+        @include heading;
+        position: relative;
+    }
+
+    .content {
+        .heading {
+            font-family: "Playfair Display", serif;
+            font-weight: 600;
+            @include font-size(1.8rem);
+            line-height: 1.2;
+        }
+
+        .rate {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            @include font-size(1.6rem);
+            line-height: 1.5;
+            color: $color1;
+            border-bottom: 2px solid $color2;
+        }
+
+        .text-1 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: $color1;
+            @include rfs(0.9rem, margin-bottom);
+        }
+
+        .ulm {
+            @include rfs(1rem);
+            line-height: 1.5;
+            font-weight: 400;
+            color: $color1;
+            @include rfs(0.9rem, margin-bottom);
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .text-last {
+            @include rfs(1rem, margin-top);
+            font-family: "Open Sans", sans-serif;
+            @include rfs(1rem);
+            line-height: 1.5;
+            color: $color1;
+            font-weight: 400;
+        }
+    }
+}

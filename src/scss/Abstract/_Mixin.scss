@@ -78,3 +78,46 @@
         @include rfs(2.857rem, padding-bottom);
     }
 }
+
+@mixin heading {
+    font-family: "Playfair Display", serif;
+    color: $color2;
+    @include rfs(2.1rem, font-size);
+    font-weight: 700;
+}
+
+@mixin name {
+    color: $color5;
+    @include rfs(0.9rem, font-size);
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+
+    &::after {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 1px;
+        display: inline-block;
+        width: 130px;
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+}
+
+@mixin background-black {
+    @include background-image(fixed);
+    position: relative;
+    @include rfs(5rem, padding-top);
+    @include rfs(5rem, padding-bottom);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}

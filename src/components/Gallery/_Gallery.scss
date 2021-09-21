@@ -1,0 +1,15 @@
+.gallery {
+    background-color: rgb(12, 11, 9);
+    @include section;
+
+    img {
+        width: 100%;
+        border-right: 3px solid #454035;
+        border-bottom: 3px solid #454035;
+        transition: transform ease-in-out 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

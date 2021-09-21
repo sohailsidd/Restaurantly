@@ -1,0 +1,28 @@
+.menu {
+    background-color: $Bg-color2;
+    @include section;
+
+    .filterbox {
+        text-align: center;
+        @include rfs(2.857rem, margin-bottom);
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            @include flex;
+
+            li {
+                margin-right: 20px;
+                color: $White;
+                font-family: "Playfair Display", serif;
+                @include font-size(1.2rem);
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $Brown;
+                }
+            }
+        }
+    }
+}
